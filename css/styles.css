@@ -1,0 +1,867 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #181818;
+}
+
+.backgroundRed {
+    background-color: #8F0000;
+}
+
+.red {
+    color: #8F0000;
+}
+
+.white {
+    color: white;
+}
+
+header {
+    padding: 5px;
+    text-align: center;
+    height: 50px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 100%;
+}
+
+.divLogoBear {
+    display: none;
+    width: 100vw;
+}
+
+.imgLogoBear {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+nav {
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.listPages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.listPages li {
+    list-style-type: none;
+}
+
+.listPages li a {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    color: white;
+    text-decoration: none;
+}
+
+.gridContainerIndex {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .5fr .3fr .5fr 1.3fr;
+    grid-template-areas: "portada"
+        "titulo"
+        "vimeo"
+        "infoSpotify";
+}
+
+.sectionPortadaIndex {
+    grid-area: portada;
+    display: flex;
+    align-items: flex-start;
+}
+
+.imgPortadaIndex {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.sectionTituloIndex,
+.sectionTituloDiscografia,
+.sectionTituloIntegrantes,
+.sectionTituloTour,
+.divTituloContacto {
+    grid-area: titulo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+}
+
+.h2TituloIndex,
+.h2TituloDiscografia,
+.h2TituloIntegrantes,
+.h2TituloTour,
+.h2TituloContacto {
+    font-weight: 400;
+}
+
+.sectionVimeoIndex {
+    grid-area: vimeo;
+    margin: 0 15px;
+}
+
+.sectionInfoSpotifyIndex {
+    grid-area: infoSpotify;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+h3,
+h4,
+.tableTour {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.h3InfoIndex {
+    text-align: center;
+    padding: 25px 0;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+.pInfoIndex {
+    text-align: justify;
+    padding: 0 50px;
+}
+
+.divSpotifyIndex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    display: flex;
+}
+
+.divSpotifyImg {
+    width: min-content;
+    display: flex;
+    justify-content: center;
+}
+
+.imgSpotifyIndex {
+    height: 5vh;
+    margin-right: 5px;
+}
+
+.h3SpotifyIndex {
+    position: relative;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.divFooter {
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+}
+
+.divSocial {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    order: -1;
+}
+
+.divSocial img {
+    height: 3.5vh;
+}
+
+h4 {
+    padding-top: 10px;
+    text-align: center;
+}
+
+/* DISCOGRAFIA */
+
+.gridContainerDiscografia {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .2fr 1fr 1fr .2fr;
+    grid-template-areas: "tituloDiscografia"
+        "albumes"
+        "spotify"
+        "texto";
+}
+
+.sectionTituloDiscografia {
+    grid-area: tituloDiscografia;
+}
+
+.sectionAlbumesDiscografia {
+    grid-area: albumes;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.sectionAlbumesDiscografia img {
+    width: 95px;
+    height: 95px;
+}
+
+.sectionSpotifyDiscografia {
+    grid-area: spotify;
+}
+
+.sectionTextoDiscografia {
+    grid-area: texto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    margin: 0 15px;
+}
+
+/* INTEGRANTES */
+
+.sectionTituloIntegrantes {
+    margin: 10px 0;
+}
+
+.sectionIntegrantes {
+    display: grid;
+    grid-gap: 15px;
+    margin-bottom: 15px;
+}
+
+.sectionIntegrantes img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.thomArticle {
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    grid-template-rows: .5fr 2fr;
+    grid-template-areas: "thomFoto thomTitulo"
+        "thomFoto thomTitulo";
+    margin: 0 20px;
+}
+
+.thomFoto {
+    grid-area: thomFoto;
+    margin: 0 10px;
+}
+
+.thomTitulo {
+    grid-area: thomTitulo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thomTexto {
+    grid-area: thomTexto;
+    display: none;
+}
+
+.jonnyArticle {
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    grid-template-rows: .5fr 2fr;
+    grid-template-areas: "jonnyFoto jonnyTitulo"
+        "jonnyFoto jonnyTitulo";
+    margin: 0 20px;
+}
+
+.jonnyFoto {
+    grid-area: jonnyFoto;
+    margin: 0 10px;
+}
+
+.jonnyTitulo {
+    grid-area: jonnyTitulo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jonnyTexto {
+    grid-area: jonnyTexto;
+    display: none;
+}
+
+.edArticle {
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    grid-template-rows: .5fr 2fr;
+    grid-template-areas: "edFoto edTitulo"
+        "edFoto edTitulo";
+    margin: 0 20px;
+}
+
+.edFoto {
+    grid-area: edFoto;
+    margin: 0 10px;
+}
+
+.edTitulo {
+    grid-area: edTitulo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.edTexto {
+    grid-area: edTexto;
+    display: none;
+}
+
+.colinArticle {
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    grid-template-rows: .5fr 2fr;
+    grid-template-areas: "colinFoto colinTitulo"
+        "colinFoto colinTitulo";
+    margin: 0 20px;
+
+}
+
+.colinFoto {
+    grid-area: colinFoto;
+    margin: 0 10px;
+}
+
+.colinTitulo {
+    grid-area: colinTitulo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.colinTexto {
+    grid-area: colinTexto;
+    display: none;
+}
+
+.philArticle {
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    grid-template-rows: .5fr 2fr;
+    grid-template-areas: "philFoto philTitulo"
+        "philFoto philTitulo";
+    margin: 0 20px;
+}
+
+.philFoto {
+    grid-area: philFoto;
+    margin: 0 10px;
+}
+
+.philTitulo {
+    grid-area: philTitulo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.philTexto {
+    grid-area: philTexto;
+    display: none;
+}
+
+/* TOUR */
+
+.gridContainerTour {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 4fr;
+    grid-template-areas: "portadaTour"
+        "tituloTour"
+        "tableTour";
+}
+
+.sectionPortadaTour {
+    grid-area: portadaTour;
+}
+
+.imgPortadaTour,
+.imgPortadaContacto {
+    width: 100%;
+}
+
+.sectionTituloTour {
+    grid-area: tituloTour;
+}
+
+.sectionTableTour {
+    grid-area: tableTour;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.tableTour {
+    background-color: #151515;
+    width: 90vw;
+}
+
+td {
+    font-size: .8rem;
+    text-align: center;
+    width: 25%;
+}
+
+/* CONTACTO */
+
+.gridContainerContacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr .5fr 2fr;
+    grid-template-areas: "portadaContacto"
+        "textoContacto"
+        "formContacto";
+}
+
+.sectionPortadaContacto {
+    grid-area: portadaContacto;
+}
+
+.imgPortadaContacto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sectionTextoContacto {
+    grid-area: textoContacto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.h3Contacto {
+    display: none;
+}
+
+.sectionFormContacto {
+    grid-area: formContacto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.formContacto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.divForm1,
+.divForm2,
+.divForm3,
+.divForm4,
+.divForm5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+label {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.divForm5 input {
+    width: 100px;
+    margin: 5px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width:768px) {
+
+    .gridContainerIndex {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.3fr 1fr 0.8fr;
+        grid-template-areas: "portada"
+            "titulo"
+            "vimeo"
+            "infoSpotify";
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    nav {
+        padding-bottom: 20px;
+    }
+
+    .listPages li a {
+        font-size: 1.2rem;
+    }
+
+    .sectionTituloIndex,
+    .sectionTituloDiscografia,
+    .sectionTituloIntegrantes,
+    .sectionTituloTour,
+    .divTituloContacto {
+        font-size: 2rem;
+    }
+
+    .sectionVimeoIndex {
+        margin: 0 50px;
+    }
+
+    .h3InfoIndex,
+    .h3DisfrutaTexto,
+    .sectionIntegrantes h3 {
+        font-size: 1.5rem;
+    }
+
+    .pInfoIndex {
+        font-size: 1.2rem;
+        padding: 0 35px;
+    }
+
+    .imgSpotifyIndex {
+        height: 8vh;
+    }
+
+    .divSocial img {
+        height: 5vh;
+    }
+
+    /* Discografía 768px */
+
+    .gridContainerDiscografia {
+        grid-template-rows: 1fr 5fr 4fr .7fr;
+    }
+
+    .sectionAlbumesDiscografia {
+        margin: 0 50px;
+    }
+
+    .sectionAlbumesDiscografia img {
+        width: 150px;
+        height: 150px;
+        margin: 10px 0;
+    }
+
+    .sectionSpotifyDiscografia {
+        display: flex;
+        align-items: center;
+        margin: 0 25px;
+    }
+
+    /* Integrantes 768px */
+
+    .sectionIntegrantes p {
+        margin-top: 30px;
+        margin-left: 50px;
+    }
+
+    .thomArticle {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: .5fr 2fr;
+        grid-template-areas: "thomFoto thomTitulo"
+            "thomFoto thomTexto";
+        margin: 0 20px;
+    }
+
+    .jonnyArticle {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: .5fr 2fr;
+        grid-template-areas: "jonnyFoto jonnyTitulo"
+            "jonnyFoto jonnyTexto";
+        margin: 0 20px;
+    }
+
+    .edArticle {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: .5fr 2fr;
+        grid-template-areas: "edFoto edTitulo"
+            "edFoto edTexto";
+        margin: 0 20px;
+    }
+
+    .colinArticle {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: .5fr 2fr;
+        grid-template-areas: "colinFoto colinTitulo"
+            "colinFoto colinTexto";
+        margin: 0 20px;
+    }
+
+    .philArticle {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: .5fr 2fr;
+        grid-template-areas: "philFoto philTitulo"
+            "philFoto philTexto";
+        margin: 0 20px;
+    }
+
+    .thomTexto,
+    .jonnyTexto,
+    .edTexto,
+    .colinTexto,
+    .philTexto {
+        display: flex;
+    }
+
+    /* Tour 768px */
+
+    td {
+        font-size: 1rem;
+    }
+
+    /* Contacto 768px */
+
+    .gridContainerContacto {
+        grid-template-rows: 4fr 3fr 6fr;
+    }
+
+    .sectionTextoContacto {
+        justify-content: space-evenly;
+    }
+
+    .h3Contacto {
+        display: block;
+        margin: 0 100px;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    label,
+    input {
+        font-size: 1.3rem;
+    }
+
+    .divForm1,
+    .divForm2,
+    .divForm3,
+    .divForm4,
+    .divForm5 {
+        flex-direction: row;
+    }
+
+    .labelUsuario {
+        margin-right: 159px;
+    }
+
+    .labelMail {
+        margin-right: 64px;
+    }
+
+    .textAreaText {
+        margin-right: 30px;
+    }
+
+    textarea {
+        width: 256px;
+    }
+
+    .divForm5 input {
+        width: 150px;
+        margin-right: 10px;
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+
+    .gridContainerIndex {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: .5fr .2fr 1.2fr;
+        gap: 20px;
+        grid-template-areas: "portada portada"
+            "titulo titulo"
+            "vimeo infoSpotify";
+    }
+
+    .divHeaderNav {
+        display: grid;
+        grid-template-columns: 1fr 2.5fr;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: .5fr 2fr;
+        grid-template-rows: 1fr;
+        align-content: center;
+    }
+
+    .divLogoBear {
+        display: flex;
+        width: 80px;
+        height: 100%;
+    }
+
+    header h1 {
+        text-align: left;
+    }
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .listPages li a {
+        font-size: medium;
+        margin: 0 20px;
+    }
+
+    .imgPortadaIndex {
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .sectionVimeoIndex {
+        margin: 50px 30px;
+    }
+
+    .sectionInfoSpotifyIndex {
+        justify-self: start;
+        align-self: center;
+    }
+
+    .h3InfoIndex {
+        margin: 0 0px;
+    }
+
+    .divSpotifyIndex {
+        position: relative;
+        right: 50px;
+        margin-top: 25px;
+    }
+
+    .imgSpotifyIndex {
+        height: 6vh;
+    }
+
+    h4 {
+        text-align: left;
+        padding: 0;
+        margin-left: 75px;
+        position: relative;
+        bottom: 20px;
+    }
+
+    .divSocial {
+        grid-column: 3;
+        justify-content: flex-end;
+    }
+
+    .divSocial img {
+        height: 3vh;
+    }
+
+    .divSocial a {
+        display: flex;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 20px;
+    }
+
+    /* Discografía 1024px */
+
+    .gridContainerDiscografia {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 5fr 1fr;
+        gap: 20px;
+        grid-template-areas: "tituloDiscografia tituloDiscografia"
+            "albumes spotify"
+            "texto texto";
+    }
+
+    .sectionAlbumesDiscografia {
+        margin: 0 15px;
+    }
+
+    .sectionSpotifyDiscografia {
+        margin: 0 15px;
+    }
+
+    /* Integrantes 1024px */
+
+    .sectionIntegrantes {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Tour 1024px */
+
+    .gridContainerTour {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr .5fr 1.2fr;
+        grid-template-areas: "portadaTour"
+            "tituloTour"
+            "tableTour";
+    }
+
+    .tableTour {
+        width: 70vw;
+    }
+
+    /* Contacto 1024px */
+
+    .gridContainerContacto {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "portadaContacto portadaContacto"
+            "textoContacto formContacto";
+    }
+
+    .sectionTextoContacto {
+        justify-content: start;
+        margin-top: 50px;
+        gap: 50px;
+    }
+
+    .h3Contacto {
+        text-align: justify;
+        margin: 0 50px;
+    }
+
+    .sectionFormContacto {
+        margin: 100px 50px;
+    }
+}
