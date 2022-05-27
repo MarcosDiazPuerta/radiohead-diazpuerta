@@ -5,7 +5,8 @@
 }
 
 body {
-    background-color: #181818;
+    background-image: linear-gradient(to bottom, #232323, black);
+
 }
 
 .backgroundRed {
@@ -64,6 +65,10 @@ nav {
     font-weight: 100;
     color: white;
     text-decoration: none;
+}
+
+.listPages li a:hover {
+    font-weight: 400;
 }
 
 .gridContainerIndex {
@@ -162,6 +167,11 @@ a {
 .imgSpotifyIndex {
     height: 5vh;
     margin-right: 5px;
+    transition: all .5s;
+}
+
+.imgSpotifyIndex:hover {
+    transform: scale(1.1);
 }
 
 .h3SpotifyIndex {
@@ -223,6 +233,11 @@ h4 {
 .sectionAlbumesDiscografia img {
     width: 95px;
     height: 95px;
+    transition: .5s;
+}
+
+.sectionAlbumesDiscografia img:hover {
+    transform: scale(1.1);
 }
 
 .sectionSpotifyDiscografia {
