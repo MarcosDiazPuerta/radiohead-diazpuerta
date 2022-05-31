@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: linear-gradient(to bottom, #232323, black);
+    background-image: linear-gradient(to bottom, #121212, #050505);
 
 }
 
@@ -21,13 +21,8 @@ body {
     color: white;
 }
 
-header {
-    padding: 5px;
-    text-align: center;
-    height: 50px;
+.tituloHeader {
     font-family: 'Oswald', sans-serif;
-    font-weight: 400;
-    font-size: 100%;
 }
 
 .divLogoBear {
@@ -103,7 +98,10 @@ nav {
     justify-content: center;
     align-items: center;
     font-family: 'Oswald', sans-serif;
-    /* font-size: 1.5rem; */
+}
+
+.sectionTituloIndex {
+    margin-top: 10px;
 }
 
 .h2TituloIndex,
@@ -152,6 +150,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 a {
@@ -242,6 +241,7 @@ h4 {
 
 .sectionSpotifyDiscografia {
     grid-area: spotify;
+    margin: 10px 15px;
 }
 
 .sectionTextoDiscografia {
@@ -262,7 +262,7 @@ h4 {
 .sectionIntegrantes {
     display: grid;
     grid-gap: 15px;
-    margin-bottom: 15px;
+    margin: 10px 10px 20px 10px;
 }
 
 .sectionIntegrantes img {
@@ -277,7 +277,6 @@ h4 {
     grid-template-rows: .5fr 2fr;
     grid-template-areas: "thomFoto thomTitulo"
         "thomFoto thomTitulo";
-    margin: 0 20px;
 }
 
 .thomFoto {
@@ -303,7 +302,6 @@ h4 {
     grid-template-rows: .5fr 2fr;
     grid-template-areas: "jonnyFoto jonnyTitulo"
         "jonnyFoto jonnyTitulo";
-    margin: 0 20px;
 }
 
 .jonnyFoto {
@@ -329,7 +327,6 @@ h4 {
     grid-template-rows: .5fr 2fr;
     grid-template-areas: "edFoto edTitulo"
         "edFoto edTitulo";
-    margin: 0 20px;
 }
 
 .edFoto {
@@ -355,8 +352,6 @@ h4 {
     grid-template-rows: .5fr 2fr;
     grid-template-areas: "colinFoto colinTitulo"
         "colinFoto colinTitulo";
-    margin: 0 20px;
-
 }
 
 .colinFoto {
@@ -382,7 +377,6 @@ h4 {
     grid-template-rows: .5fr 2fr;
     grid-template-areas: "philFoto philTitulo"
         "philFoto philTitulo";
-    margin: 0 20px;
 }
 
 .philFoto {
@@ -838,6 +832,12 @@ label {
 
     .sectionIntegrantes {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .sectionIntegrantes img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
     }
 
     /* Tour 1024px */
