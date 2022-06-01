@@ -54,43 +54,31 @@
                 conciertos
                 próximos.</h3>
         </section>
-        <section class="sectionFormContacto">
-            <form class="formContacto" action="">
-                <div class="divForm1">
-                    <div class="formUsuario">
-                        <label class="labelUsuario" for="nombreUsuario">Nombre:</label>
-                    </div>
-                    <div class="form1">
-                        <input type="text" name="" id="nombreUsuario">
-                    </div>
+        <section class="sectionFormContacto container">
+            <form class="formContacto container" action="">
+                <div class="mb-3">
+                    <label class="form-label labelUsuario lead" for="nombreUsuario">Nombre:</label>
+                    <input class="form-control" type="text" name="" id="nombreUsuario">
                 </div>
-                <div class="divForm2">
-                    <div class="formMail">
-                        <label class="labelMail" for="emailUsuario">Correo electrónico:</label>
-                    </div>
-                    <div class="form2">
-                        <input type="email" name="" id="emailUsuario">
-                    </div>
+                <div class="mb-3">
+                    <label class="form-label labelMail lead" for="emailUsuario">Correo electrónico:</label>
+                    <input class="form-control" type="email" name="" id="emailUsuario">
                 </div>
-                <div class="divForm3">
-                    <div class="formTexto">
-                        <label class="textAreaText" for="textoUsuario">Escribinos tu consulta:</label>
-                    </div>
-                    <div class="form3">
-                        <textarea class="textAreaBox" name="" id="" cols="30" rows="10" id="textoUsuario"></textarea>
-                    </div>
+                <div class="mb-3">
+                    <label class="form-label textAreaText lead" for="textoUsuario">Escribinos tu consulta:</label>
+                    <textarea class="form-control textAreaBox" name="" id="" cols="30" rows="10"
+                        id="textoUsuario"></textarea>
                 </div>
-                <div class="divForm4">
-                    <div class="formNewsletter">
-                        <label for="newsletterUsuario">Suscribite a nuestro Newsletter</label>
-                        <input type="checkbox" name="" id="newsletterUsuario">
+                <div class="input-group input-group-sm mb-3">
+                    <div class="input-group-text bg-dark">
+                        <input class="form-check-input mt-0" type="checkbox" value="">
                     </div>
+                    <input type="text" class="form-control bg-dark white" value="Suscribite a nuestro Newsletter"
+                        readonly>
                 </div>
-                <div class="divForm5">
-                    <div class="formBotones">
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Limpiar">
-                    </div>
+                <div class="mb-3">
+                    <input type="submit" class="btn btn-outline-danger" value="Enviar">
+                    <input type="reset" class="btn btn-outline-secondary" value="Limpiar">
                 </div>
             </form>
         </section>

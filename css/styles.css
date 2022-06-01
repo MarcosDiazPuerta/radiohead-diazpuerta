@@ -401,7 +401,7 @@ h4 {
 .gridContainerTour {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 4fr;
+    grid-template-rows: 1fr 1fr 3fr;
     grid-template-areas: "portadaTour"
         "tituloTour"
         "tableTour";
@@ -430,12 +430,12 @@ h4 {
 .tableTour {
     background-color: #151515;
     width: 90vw;
+    height: min-content;
+    border: grey solid 1px;
 }
 
 td {
-    font-size: .8rem;
-    text-align: center;
-    width: 25%;
+    max-width: fit-content;
 }
 
 /* CONTACTO */
@@ -443,7 +443,7 @@ td {
 .gridContainerContacto {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr .5fr 2fr;
+    grid-template-rows: .5fr .5fr 3fr;
     grid-template-areas: "portadaContacto"
         "textoContacto"
         "formContacto";
@@ -455,7 +455,7 @@ td {
 
 .imgPortadaContacto {
     width: 100%;
-    height: 100%;
+    height: 250px;
     object-fit: cover;
 }
 
@@ -472,10 +472,10 @@ td {
 
 .sectionFormContacto {
     grid-area: formContacto;
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 20px; */
 }
 
 .formContacto {
@@ -653,14 +653,14 @@ label {
 
     /* Tour 768px */
 
-    td {
-        font-size: 1rem;
+    .gridContainerTour {
+        grid-template-rows: 1fr 1fr 2fr;
     }
 
     /* Contacto 768px */
 
     .gridContainerContacto {
-        grid-template-rows: 4fr 3fr 6fr;
+        grid-template-rows: .5fr 1fr 3fr;
     }
 
     .sectionTextoContacto {
@@ -679,15 +679,15 @@ label {
         font-size: 1.3rem;
     }
 
-    .divForm1,
+    /* .divForm1,
     .divForm2,
     .divForm3,
     .divForm4,
     .divForm5 {
         flex-direction: row;
-    }
+    } */
 
-    .labelUsuario {
+    /* .labelUsuario {
         margin-right: 159px;
     }
 
@@ -701,12 +701,12 @@ label {
 
     textarea {
         width: 256px;
-    }
+    } */
 
-    .divForm5 input {
+    /* .divForm5 input {
         width: 150px;
         margin-right: 10px;
-    }
+    } */
 
 }
 
@@ -860,23 +860,15 @@ label {
     .gridContainerContacto {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr 2.5fr;
         grid-template-areas: "portadaContacto portadaContacto"
             "textoContacto formContacto";
-    }
-
-    .sectionTextoContacto {
-        justify-content: start;
-        margin-top: 50px;
-        gap: 50px;
+        grid-gap: 50px;
+        align-items: start;
     }
 
     .h3Contacto {
-        text-align: justify;
-        margin: 0 50px;
-    }
-
-    .sectionFormContacto {
-        margin: 100px 50px;
+        position: relative;
+        top: 40px;
     }
 }
