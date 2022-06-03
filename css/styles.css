@@ -167,8 +167,7 @@ a {
     justify-content: center;
     align-items: center; }
   .thomArticle .texto {
-    grid-area: thomTexto;
-    display: none; }
+    grid-area: thomTexto; }
 
 .jonnyArticle {
   display: grid;
@@ -184,8 +183,7 @@ a {
     justify-content: center;
     align-items: center; }
   .jonnyArticle .texto {
-    grid-area: jonnyTexto;
-    display: none; }
+    grid-area: jonnyTexto; }
 
 .edArticle {
   display: grid;
@@ -201,8 +199,7 @@ a {
     justify-content: center;
     align-items: center; }
   .edArticle .texto {
-    grid-area: edTexto;
-    display: none; }
+    grid-area: edTexto; }
 
 .colinArticle {
   display: grid;
@@ -218,8 +215,7 @@ a {
     justify-content: center;
     align-items: center; }
   .colinArticle .texto {
-    grid-area: colinTexto;
-    display: none; }
+    grid-area: colinTexto; }
 
 .philArticle {
   display: grid;
@@ -235,8 +231,10 @@ a {
     justify-content: center;
     align-items: center; }
   .philArticle .texto {
-    grid-area: philTexto;
-    display: none; }
+    grid-area: philTexto; }
+
+.texto {
+  display: none; }
 
 /* TOUR */
 .gridContainerTour {
@@ -310,9 +308,6 @@ label {
     grid-template-areas: "portada" "titulo" "vimeo" "infoSpotify"; }
   .sectionVimeoIndex {
     margin: 0 50px; }
-  .h3DisfrutaTexto,
-  .sectionIntegrantes h3 {
-    font-size: 1.5rem; }
   .pInfoIndex {
     font-size: 1.2rem;
     padding: 0 35px; }
@@ -323,18 +318,23 @@ label {
     grid-template-rows: 1fr 5fr 4fr .7fr; }
   .sectionAlbumesDiscografia {
     margin: 0 50px; }
-  .sectionAlbumesDiscografia img {
-    width: 150px;
-    height: 150px;
-    margin: 10px 0; }
+    .sectionAlbumesDiscografia img {
+      width: 150px;
+      height: 150px;
+      margin: 10px 0; }
   .sectionSpotifyDiscografia {
     display: flex;
     align-items: center;
     margin: 0 25px; }
+  .h3DisfrutaTexto,
+  .sectionIntegrantes h3 {
+    font-size: 1.5rem; }
   /* Integrantes 768px */
   .sectionIntegrantes p {
     margin-top: 30px;
     margin-left: 50px; }
+  .sectionIntegrantes h3 {
+    font-size: 1.5rem; }
   .thomArticle {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -365,11 +365,7 @@ label {
     grid-template-rows: .5fr 2fr;
     grid-template-areas: "philFoto philTitulo" "philFoto philTexto";
     margin: 0 20px; }
-  .thomTexto,
-  .jonnyTexto,
-  .edTexto,
-  .colinTexto,
-  .philTexto {
+  .texto {
     display: flex; }
   /* Tour 768px */
   .gridContainerTour {
@@ -383,9 +379,6 @@ label {
     display: block;
     margin: 0 100px;
     text-align: center;
-    font-size: 1.3rem; }
-  label,
-  input {
     font-size: 1.3rem; }
   /* .divForm1,
     .divForm2,
@@ -414,34 +407,13 @@ label {
         margin-right: 10px;
     } */ }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .gridContainerIndex {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: .5fr .2fr 1.2fr;
     gap: 20px;
     grid-template-areas: "portada portada" "titulo titulo" "vimeo infoSpotify"; }
-  .divHeaderNav {
-    display: grid;
-    grid-template-columns: 1fr 2.5fr; }
-  header {
-    display: grid;
-    grid-template-columns: .5fr 2fr;
-    grid-template-rows: 1fr;
-    align-content: center; }
-  .divLogoBear {
-    display: flex;
-    width: 80px;
-    height: 100%; }
-  header h1 {
-    text-align: left; }
-  nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center; }
-  .listPages li a {
-    font-size: medium;
-    margin: 0 20px; }
   .imgPortadaIndex {
     height: 300px;
     object-fit: cover; }
@@ -458,42 +430,21 @@ label {
     margin-top: 25px; }
   .imgSpotifyIndex {
     height: 6vh; }
-  h4 {
-    text-align: left;
-    padding: 0;
-    margin-left: 75px;
-    position: relative;
-    bottom: 20px; }
-  .divSocial {
-    grid-column: 3;
-    justify-content: flex-end; }
-  .divSocial img {
-    height: 3vh; }
-  .divSocial a {
-    display: flex;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
-    margin: 0 20px; }
-  /* Discografía 1024px */
+  /* Discografía 992px */
   .gridContainerDiscografia {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 5fr 1fr;
     gap: 20px;
     grid-template-areas: "tituloDiscografia tituloDiscografia" "albumes spotify" "texto texto"; }
-  .sectionAlbumesDiscografia {
-    margin: 0 15px; }
-  .sectionSpotifyDiscografia {
-    margin: 0 15px; }
-  /* Integrantes 1024px */
+  /* Integrantes 992px */
   .sectionIntegrantes {
     grid-template-columns: 1fr 1fr; }
-  .sectionIntegrantes img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover; }
-  /* Tour 1024px */
+    .sectionIntegrantes img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover; }
+  /* Tour 992px */
   .gridContainerTour {
     display: grid;
     grid-template-columns: 1fr;
@@ -501,7 +452,7 @@ label {
     grid-template-areas: "portadaTour" "tituloTour" "tableTour"; }
   .tableTour {
     width: 70vw; }
-  /* Contacto 1024px */
+  /* Contacto 992px */
   .gridContainerContacto {
     display: grid;
     grid-template-columns: 1fr 1fr;
