@@ -62,7 +62,7 @@ body {
 h3,
 h4,
 .tableTour {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 300; }
 
 .h3InfoIndex {
@@ -70,7 +70,7 @@ h4,
   padding: 25px 0; }
 
 p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 100; }
 
 .pInfoIndex {
@@ -296,7 +296,7 @@ td {
   grid-area: formContacto; }
 
 label {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: white; }
 
 /* MEDIA QUERIES */
@@ -379,33 +379,7 @@ label {
     display: block;
     margin: 0 100px;
     text-align: center;
-    font-size: 1.3rem; }
-  /* .divForm1,
-    .divForm2,
-    .divForm3,
-    .divForm4,
-    .divForm5 {
-        flex-direction: row;
-    } */
-  /* .labelUsuario {
-        margin-right: 159px;
-    }
-
-    .labelMail {
-        margin-right: 64px;
-    }
-
-    .textAreaText {
-        margin-right: 30px;
-    }
-
-    textarea {
-        width: 256px;
-    } */
-  /* .divForm5 input {
-        width: 150px;
-        margin-right: 10px;
-    } */ }
+    font-size: 1.3rem; } }
 
 @media screen and (min-width: 992px) {
   .gridContainerIndex {
@@ -444,6 +418,9 @@ label {
       width: 200px;
       height: 200px;
       object-fit: cover; }
+  .sectionIntegrantes p {
+    margin-top: 0;
+    margin-left: 10px; }
   /* Tour 992px */
   .gridContainerTour {
     display: grid;

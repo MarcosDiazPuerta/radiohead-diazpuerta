@@ -1,3 +1,5 @@
+@import 'variables';
+
 * {
     margin: 0;
     padding: 0;
@@ -78,7 +80,7 @@ body {
 h3,
 h4,
 .tableTour {
-    font-family: 'Roboto', sans-serif;
+    font-family: $tipografia-principal;
     font-weight: 300;
 }
 
@@ -88,7 +90,7 @@ h4,
 }
 
 p {
-    font-family: 'Roboto', sans-serif;
+    font-family: $tipografia-principal;
     font-weight: 100;
 }
 
@@ -129,11 +131,6 @@ a {
     text-align: center;
     margin-left: 5px;
 }
-
-// h4 {
-//     padding-top: 10px;
-//     text-align: center;
-// }
 
 /* DISCOGRAFIA */
 
@@ -404,25 +401,8 @@ td {
     grid-area: formContacto;
 }
 
-// .formContacto {
-//     display: flex;
-//     flex-direction: column;
-//     gap: 20px;
-// }
-
-// .divForm1,
-// .divForm2,
-// .divForm3,
-// .divForm4,
-// .divForm5 {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     gap: 10px;
-// }
-
 label {
-    font-family: 'Roboto', sans-serif;
+    font-family: $tipografia-principal;
     color: white;
 }
 
@@ -439,33 +419,6 @@ label {
             "vimeo"
             "infoSpotify";
     }
-
-    // header {
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center;
-    //     padding: 40px;
-    // }
-
-    // h1 {
-    //     font-size: 3rem;
-    // }
-
-    // nav {
-    //     padding-bottom: 20px;
-    // }
-
-    // .listPages li a {
-    //     font-size: 1.2rem;
-    // }
-
-    // .sectionTituloIndex,
-    // .sectionTituloDiscografia,
-    // .sectionTituloIntegrantes,
-    // .sectionTituloTour,
-    // .divTituloContacto {
-    //     font-size: 2rem;
-    // }
 
     .sectionVimeoIndex {
         margin: 0 50px;
@@ -592,40 +545,6 @@ label {
         font-size: 1.3rem;
     }
 
-    // label,
-    // input {
-    //     font-size: 1.3rem;
-    // }
-
-    /* .divForm1,
-    .divForm2,
-    .divForm3,
-    .divForm4,
-    .divForm5 {
-        flex-direction: row;
-    } */
-
-    /* .labelUsuario {
-        margin-right: 159px;
-    }
-
-    .labelMail {
-        margin-right: 64px;
-    }
-
-    .textAreaText {
-        margin-right: 30px;
-    }
-
-    textarea {
-        width: 256px;
-    } */
-
-    /* .divForm5 input {
-        width: 150px;
-        margin-right: 10px;
-    } */
-
 }
 
 @media screen and (min-width:992px) {
@@ -639,39 +558,6 @@ label {
             "titulo titulo"
             "vimeo infoSpotify";
     }
-
-    // .divHeaderNav {
-    //     display: grid;
-    //     grid-template-columns: 1fr 2.5fr;
-    // }
-
-    // header {
-    //     display: grid;
-    //     grid-template-columns: .5fr 2fr;
-    //     grid-template-rows: 1fr;
-    //     align-content: center;
-    // }
-
-    // .divLogoBear {
-    //     display: flex;
-    //     width: 80px;
-    //     height: 100%;
-    // }
-
-    // header h1 {
-    //     text-align: left;
-    // }
-
-    // nav {
-    //     display: flex;
-    //     justify-content: flex-end;
-    //     align-items: center;
-    // }
-
-    // .listPages li a {
-    //     font-size: medium;
-    //     margin: 0 20px;
-    // }
 
     .imgPortadaIndex {
         height: 300px;
@@ -701,31 +587,6 @@ label {
         height: 6vh;
     }
 
-    // h4 {
-    //     text-align: left;
-    //     padding: 0;
-    //     margin-left: 75px;
-    //     position: relative;
-    //     bottom: 20px;
-    // }
-
-    // .divSocial {
-    //     grid-column: 3;
-    //     justify-content: flex-end;
-    // }
-
-    // .divSocial img {
-    //     height: 3vh;
-    // }
-
-    // .divSocial a {
-    //     display: flex;
-    //     height: 50px;
-    //     justify-content: center;
-    //     align-items: center;
-    //     margin: 0 20px;
-    // }
-
     /* Discografía 992px */
 
     .gridContainerDiscografia {
@@ -738,14 +599,6 @@ label {
             "texto texto";
     }
 
-    // .sectionAlbumesDiscografia {
-    //     margin: 0 15px;
-    // }
-
-    // .sectionSpotifyDiscografia {
-    //     margin: 0 15px;
-    // }
-
     /* Integrantes 992px */
 
     .sectionIntegrantes {
@@ -755,6 +608,13 @@ label {
             width: 200px;
             height: 200px;
             object-fit: cover;
+        }
+    }
+
+    .sectionIntegrantes {
+        p {
+            margin-top: 0;
+            margin-left: 10px;
         }
     }
 
