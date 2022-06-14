@@ -214,9 +214,7 @@ a {
 
     .nombre {
         grid-area: thomTitulo;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include integrantes;
     }
 
     .texto {
@@ -238,9 +236,7 @@ a {
 
     .nombre {
         grid-area: jonnyTitulo;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include integrantes;
     }
 
     .texto {
@@ -262,9 +258,7 @@ a {
 
     .nombre {
         grid-area: edTitulo;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include integrantes;
     }
 
     .texto {
@@ -286,9 +280,7 @@ a {
 
     .nombre {
         grid-area: colinTitulo;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include integrantes;
     }
 
     .texto {
@@ -310,9 +302,7 @@ a {
 
     .nombre {
         grid-area: philTitulo;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include integrantes;
     }
 
     .texto {
@@ -339,8 +329,7 @@ a {
     grid-area: portadaTour;
 }
 
-.imgPortadaTour,
-.imgPortadaContacto {
+.imgPortadaTour {
     width: 100%;
 }
 
@@ -382,7 +371,7 @@ td {
 }
 
 .imgPortadaContacto {
-    width: 100%;
+    @extend .imgPortadaTour;
     height: 250px;
     object-fit: cover;
 }
@@ -404,7 +393,7 @@ td {
 
 label {
     font-family: $tipografia-principal;
-    color: white;
+    color: map-get($colors, text);
 }
 
 /* MEDIA QUERIES */

@@ -246,8 +246,7 @@ a {
 .sectionPortadaTour {
   grid-area: portadaTour; }
 
-.imgPortadaTour,
-.imgPortadaContacto {
+.imgPortadaTour, .imgPortadaContacto {
   width: 100%; }
 
 .sectionTituloTour {
@@ -279,7 +278,6 @@ td {
   grid-area: portadaContacto; }
 
 .imgPortadaContacto {
-  width: 100%;
   height: 250px;
   object-fit: cover; }
 
