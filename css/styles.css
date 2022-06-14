@@ -5,7 +5,7 @@
   box-sizing: border-box; }
 
 body {
-  background-image: linear-gradient(to bottom, #121212, #050505); }
+  background-color: #121212; }
 
 .red {
   color: #8F0000; }
@@ -17,7 +17,7 @@ body {
   background-color: #8F0000; }
 
 .tituloHeader {
-  font-family: 'Oswald', sans-serif; }
+  font-family: "Oswald", sans-serif; }
 
 .gridContainerIndex {
   display: grid;
@@ -41,7 +41,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Oswald', sans-serif; }
+  font-family: "Oswald", sans-serif; }
 
 .tituloIndex {
   margin-top: 10px; }
