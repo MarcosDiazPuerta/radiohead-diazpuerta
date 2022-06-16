@@ -62,7 +62,7 @@ body {
     margin-top: 10px;
 }
 
-.h2Titulo {
+.h1Titulo {
     font-weight: 400;
 }
 
@@ -78,14 +78,14 @@ body {
     justify-content: space-around;
 }
 
+h2,
 h3,
-h4,
 .tableTour {
     font-family: $tipografia-principal;
     font-weight: 300;
 }
 
-.h3InfoIndex {
+.h2InfoIndex {
     text-align: center;
     padding: 25px 0;
 }
@@ -383,7 +383,7 @@ td {
     justify-content: center;
 }
 
-.h3Contacto {
+.h2Contacto {
     display: none;
 }
 
@@ -445,8 +445,7 @@ label {
         margin: 0 25px;
     }
 
-    .h3DisfrutaTexto,
-    .sectionIntegrantes h3 {
+    .h2DisfrutaTexto {
         font-size: 1.5rem;
     }
 
@@ -458,7 +457,7 @@ label {
             margin-left: 50px;
         }
 
-        h3 {
+        h2 {
             font-size: 1.5rem;
         }
     }
@@ -528,7 +527,7 @@ label {
         justify-content: space-evenly;
     }
 
-    .h3Contacto {
+    .h2Contacto {
         display: block;
         margin: 0 100px;
         text-align: center;
@@ -563,7 +562,7 @@ label {
         align-self: center;
     }
 
-    .h3InfoIndex {
+    .h2InfoIndex {
         margin: 0 0px;
     }
 
@@ -635,7 +634,7 @@ label {
         align-items: start;
     }
 
-    .h3Contacto {
+    .h2Contacto {
         position: relative;
         top: 40px;
     }
